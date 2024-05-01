@@ -70,6 +70,31 @@ function page2Animation(){
     })
     }
 
-// navAnimtaion();
-// page2Animation();
+function page3Animation(){
+    let playIcon = document.querySelector(".page3-center")
+let video = document.querySelector("#page3 video")
+
+playIcon.addEventListener("click", () =>{
+    video.play();
+    gsap.to(video,{
+        transform: 'scaleX(1.2) scaleY(1)',
+        opacity: 1,
+        borderRadius: 0
+    })
+})
+
+video.addEventListener("click", () =>{
+    video.pause();
+    gsap.to(video,{
+        transform: 'scaleX(0.7) scaleY(0)',
+        opacity: 0,
+        borderRadius: 30
+    })
+})
+}
+
+
+navAnimtaion();
+page2Animation();
+page3Animation()
 
