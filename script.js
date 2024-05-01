@@ -70,6 +70,6 @@ function page2Animation(){
     })
     }
 
-navAnimtaion();
-page2Animation();
+// navAnimtaion();
+// page2Animation();
 
