@@ -23,12 +23,13 @@ body, html{
 
 nav{
     position: fixed; 
+    z-index: 9999;
     display: flex;
     align-items: flex-start;
     width: 100%;
     padding: 2vw 8vw;
     justify-content: space-between; 
-    height: 10vh;
+    height: 12vh;
     background-color: #111;
 }
 
@@ -37,10 +38,10 @@ nav{
 }
 
 .navpart2{
-    display: flex;
-    gap: 10px;
+    display: flex; 
     align-items: flex-start;
-    padding: 1vh 2vw;
+    justify-content: space-between;
+    padding: 2vh 0;
     position: relative;
     z-index: 99;
 }
@@ -54,6 +55,8 @@ nav{
     padding: 0 10px;
     margin-bottom: 1vw;   
 }
+
+ 
 
 .nav-elem h5{
     margin-bottom: 0.2rem;
@@ -81,28 +84,26 @@ nav{
 }
 
 
-
-.nav-btn{
-    padding: 8px 10px;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer; 
-    font-family: groteshk;
+.nav-btn-side{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-transform: uppercase;
-    font-size: .5rem;
-    font-weight: 600;
-    line-height: 1; 
     background-color: #0DA34E;
+    border-radius: 50px;
+    padding: 8px 10px;
+}
+.nav-btn-side svg{
+    width: 20px;
+    padding-left: 10px;
 }
 
-.nav-btn svg{
-    width: .7rem;
-    margin-left: 1.5vw;
+.nav-btn-side button{
+    font-size: 1.5vw;
+    font-family: groteshk;
+    border: none;
+    background: transparent;
 }
+
 
 
 
@@ -114,13 +115,12 @@ nav:hover .nav-bottom{
 
 #page1{
     width: 100%;
-    height: 100vh;
+    min-height: 150vh;
     background-color: #111111;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 14vw;
+    align-items: center; 
+    padding-top:  15vw ;
 }
 
 #page1 h1{
@@ -233,4 +233,98 @@ nav:hover .nav-bottom{
     width: 100%;
     height: 100vh;
     background-color: #111;
+    position: relative;
+    z-index: 1111;
+    padding: 0 6.5vw;
+    padding-bottom: 5vw; 
+  
+}
+
+
+.border{
+    width: 100%;
+    height: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+}
+
+.page2-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+
+.page2-left p{
+    font-family: groteshk;
+    font-family: 500;
+    font-size: 1vw;
+}
+
+.page2-left h5{
+    font-family: groteshk;
+    width: 80%;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+
+.page2-right{
+    width: 50%;
+    height: 100%; 
+}
+
+.right-elem{
+    border-top: 1px solid #3D3D3D;
+    width: 100%;
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom:  6vw; 
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+}
+
+.time-lef{
+    display: flex;
+    align-items: center;
+}
+
+.time-lef svg{
+    width: 10px;
+}
+
+.time-lef p{
+    font-size: 1vw;
+    padding-right: 1vw;
+    color: #696666;
+}
+
+.content h4{
+    width: 60%;
+    /* font-family: groteshk; */
+    font-family: groSan;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.right-elem img{
+    height:9vw;
+    width: 9vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    scale: 0;
+    transition: all .2s ease;
 }
