@@ -289,6 +289,7 @@ nav:hover .nav-bottom {
     position: relative;
     padding-top: 2vw;
     padding-bottom: 6vw;
+    cursor: pointer;
 }
 
 .content {
@@ -604,6 +605,7 @@ nav:hover .nav-bottom {
     width: 70%;
     height: 95%;
     position: relative;
+    cursor: pointer;
 }
 
 .section1-right img {
@@ -634,6 +636,7 @@ nav:hover .nav-bottom {
     font-size: 1vw;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .sec1btn i{
@@ -669,6 +672,7 @@ nav:hover .nav-bottom {
     height: 100%;
     position: relative; 
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .seccard-top{
@@ -765,3 +769,337 @@ nav:hover .nav-bottom {
     margin-top: 2vw;
 }
 
+
+/* ****************** page8 ****************** */
+
+
+#page8{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111111;
+    padding: 2vw 5vw;
+}
+
+.page8-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vw;
+    padding-bottom: 5vw;
+}
+
+.page8-top h1{
+    width: 45%;
+    color: #FFFFFF;
+    font-family: groteshk;
+    font-size: 4vw;
+    text-transform: capitalize;
+}
+
+
+.page8-section2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #696666;
+    padding: 4vw 0;
+    padding-top: 10vw;
+}
+
+.sec2-left{
+    width: 25%;
+    position: sticky;
+    top: 20%;
+
+
+}
+
+.sec2-left button{
+    cursor: pointer; 
+    border: none;
+    background-color: #0DA34E;
+    padding: 1.2vw 4vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+    border-radius: 50px;
+    font-family: groteshk;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec2-left button i{
+    padding-left: 1vw;
+    font-size: 1.3vw;
+}
+
+
+
+.sec2-right{
+    width: 72%;
+}
+
+.right-top1{
+    width: 100%;
+}
+
+.right-top1 h5{
+    float: left;
+    width: 40%;
+    font-family: groSan;
+    font-size: 1vw;
+    color: #ffffffe7;
+    display: inline;
+    height: 3rem;
+    padding-top: 1vw; 
+}
+
+.right-top1 p{
+    width: 100%;
+    font-size: 2vw;
+    font-family: groSan;
+    color: #FFFFFF;
+}
+
+
+.right-sec2{ 
+    margin-top: 4vw;
+    width: 100%;
+    padding: 2vw 0;
+}
+
+.first{
+    width: 100%;
+    padding-bottom: 2.3vw;
+}
+
+.top2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding-bottom: 2vw;
+}
+
+.top2 h1{
+    font-family: groteshk;
+    color: #FFFFFF;
+}
+
+
+
+
+.right-sec2 ul{
+    display: flex;
+    align-items: center;
+    gap: .41vw;
+}
+
+.right-sec2 ul li{
+    list-style: none;
+    border: 1px solid #696666;
+    border-radius: 50px;
+    padding: 0.5vw 1vw;
+    font-family: groteshk;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+.design-sec{
+    width: 100%;
+    border-top: 2px solid #FFFFFF;
+    padding: 3vw 0;
+}
+
+.second{ 
+    width: 100%;
+    padding: 1.5vw 0;
+    padding-bottom: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #696666;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+}
+
+.second::after{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #696666;
+    width: 100%;
+    height: 100%;
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.second:hover{
+    border-top: 2px solid #fff;
+}
+
+.second:hover::after{
+    top: 0;
+}
+
+
+.second:hover h2{
+    padding-left: 1vw;
+}
+
+.second:hover i{
+    padding-right: 1vw;
+}
+
+.second h2{
+    position: relative;
+    z-index: 99;
+    font-family: groSan;
+    font-weight: 500;
+    font-size: 1.7vw;
+    color: #FFFFFF; 
+    transition: all 0.5s ease-in-out;
+}
+
+.second i{
+    position: relative;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+}
+
+.second p{
+    position: relative;
+    z-index: 99;
+    width: 55%;
+    font-family: groSan;
+    font-size: 1vw;
+}
+
+summary::marker{
+    content: "";
+}
+
+.page8-section3{
+    width: 100%;
+    border-top: 1px solid #525252;
+    min-height: 100vh;
+}
+
+.section3-top{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding: 4vw 3vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.section3-top h4{
+    font-size: 1vw;
+    color: #FFFFFF;
+    width: 18%;
+    font-family: groteshk;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.section3-top p{
+    font-size: 2.6vw;
+    font-family: groSan;
+    font-weight: 500;
+    width: 80%;
+}
+
+.seciton-boxes{
+    width: 100%; 
+}
+
+.boxes{
+    margin-top: 4vw;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    align-items: center;
+}
+
+.box{
+    width: 32%; 
+    height: 37vh;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+.box-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-top h1{
+    font-family: groteshk;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.box-top i{
+    font-size: 2vw;
+}
+
+.box p{
+    font-size: 1vw;
+    font-family: groSan;
+    font-weight: 500;
+}
+
+.section-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+}
+
+.circle-btn{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    background-color: #0DA34E;
+    position: relative;
+}
+
+.circle-btn h5{
+    font-size: 1.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: groSan;
+    position: absolute;
+    bottom: 20%;
+    left: 17%;
+}
+
+.circle-btn i{
+    font-size: 1.7vw;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+}
+
+/* ******************* page9 **************** */
+
+#page9{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}

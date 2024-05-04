@@ -133,8 +133,24 @@ function cardAnimation() {
   });
 }
 
-navAnimtaion();
-page2Animation();
-page3Animation();
-videoAnimation();
-cardAnimation();
+
+let arrow = document.querySelectorAll(".first");
+arrow.forEach((ar) => {
+  let isClick = false; // Initial state
+  ar.addEventListener("click", () => {
+    let arrowicon = ar.childNodes[1].childNodes[3];
+    if (!isClick) { // Check if it's not clicked
+      arrowicon.style.transform = 'rotate(180deg)';
+      isClick = true; // Toggle the state
+    } else {
+      arrowicon.style.transform = 'rotate(0deg)';
+      isClick = false; // Toggle the state
+    }
+  });
+});
+
+// navAnimtaion();
+// page2Animation();
+// page3Animation();
+// videoAnimation();
+// cardAnimation();
