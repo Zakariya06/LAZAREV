@@ -149,8 +149,8 @@ arrow.forEach((ar) => {
   });
 });
 
-// navAnimtaion();
-// page2Animation();
-// page3Animation();
-// videoAnimation();
-// cardAnimation();
+navAnimtaion();
+page2Animation();
+page3Animation();
+videoAnimation();
+cardAnimation();
